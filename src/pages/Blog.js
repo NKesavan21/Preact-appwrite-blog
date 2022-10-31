@@ -56,14 +56,15 @@ function BlogList() {
           />
           Blog
         </a>
-
+     {user && (
         <button
           type="button"
           class="btn btn-outline-danger"
           onClick={handleLogout}
         >
           Log out
-        </button>
+        </button> )
+      }
       </nav>
       {user && (
         <div class="goal-wrap pt-1">
